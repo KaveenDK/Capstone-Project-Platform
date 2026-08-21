@@ -1,19 +1,16 @@
 spring:
   application:
     name: Config-Server
+  profiles:
+    active: native
 
   cloud:
     config:
       server:
-        git:
-          uri: https://github.com/MaleeshaMAdhushanka/Capstone-Project-Configurations.git
-          search-paths: platform,services
         native:
-          search-locations:
-            - classpath:/configurations
-            - classpath:/configurations/platform
-            - classpath:/configurations/services
+          search-locations: 
+            - file:///D:/Softwares/VS Code/VS Project/KDK Capstone Project/eca-final-project/Capstone-Project-Configurations/platform
+            - file:///D:/Softwares/VS Code/VS Project/KDK Capstone Project/eca-final-project/Capstone-Project-Configurations/services
 
 server:
   port: 9000
-
