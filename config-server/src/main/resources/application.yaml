@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: Config-Server
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/MaleeshaMAdhushanka/Capstone-Project-Configurations.git
+          search-paths: platform,services
+        native:
+          search-locations:
+            - classpath:/configurations
+            - classpath:/configurations/platform
+            - classpath:/configurations/services
+
+server:
+  port: 9000
+
