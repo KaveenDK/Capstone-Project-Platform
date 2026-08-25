@@ -15,8 +15,9 @@
     {
       name: "api-gateway",
       script: "java",
-      args: "-jar api-gateway/target/Api-Gateway-1.0.0.jar --spring.profiles.active=prod",
+      args: "-jar api-gateway/target/Api-Gateway-1.0.0.jar --spring.profiles.active=dev",
       log_file: "./logs/api-gateway.log"
     }
   ]
 };
+
