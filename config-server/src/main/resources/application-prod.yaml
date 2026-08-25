@@ -1,8 +1,10 @@
 ﻿spring:
+  profiles:
+    include: native
   cloud:
     config:
       server:
         native:
           search-locations: 
-            - file:./Capstone-Project-Configurations/platform
-            - file:./Capstone-Project-Configurations/services
+            - file:./Capstone-Project-Configurations/platform/
+            - file:./Capstone-Project-Configurations/services/
